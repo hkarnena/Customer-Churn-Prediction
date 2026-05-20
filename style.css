@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  color: white;
+}
+
+.overlay {
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.left-section {
+  width: 60%;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.right-section {
+  width: 40%;
+}
+
+.analytics-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 40px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+input,
+select {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #1e293b;
+  color: white;
+}
+
+button {
+  grid-column: span 2;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #38bdf8;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0ea5e9;
+  transform: scale(1.02);
+}
+
+.prediction-box {
+  margin-top: 30px;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #334155;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.progress {
+  background: #38bdf8;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.high-risk {
+  color: #ef4444;
+  margin-top: 20px;
+}
+
+.medium-risk {
+  color: #f59e0b;
+  margin-top: 20px;
+}
+
+.low-risk {
+  color: #22c55e;
+  margin-top: 20px;
+}
+
+.empty-state {
+  margin-top: 50px;
+  text-align: center;
+  color: #cbd5e1;
+}
